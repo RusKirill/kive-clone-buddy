@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 bg-background/80 backdrop-blur-md border-b border-border/50">
       <div className="flex items-center gap-2">
-        <img src={logo} alt="Closeit" className="h-7" />
+        <img src={logo} alt="Closeit" className="h-9" />
       </div>
 
       <div className="hidden md:flex items-center gap-8">
