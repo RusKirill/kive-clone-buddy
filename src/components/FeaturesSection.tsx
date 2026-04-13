@@ -1,11 +1,16 @@
 import productPerfume from "@/assets/product-perfume.jpg";
 import featureBag from "@/assets/feature-bag.jpg";
 import featurePerfumeAloe from "@/assets/feature-perfume-aloe.jpg";
+import featureGirlJacket from "@/assets/feature-girl-jacket.jpg";
+import featureVar1 from "@/assets/feature-variation-1.jpg";
+import featureVar2 from "@/assets/feature-variation-2.jpg";
+import featureVar3 from "@/assets/feature-variation-3.jpg";
+import featureVar4 from "@/assets/feature-variation-4.jpg";
 
 const FeaturesSection = () => {
   return (
     <section className="px-4 py-24 space-y-32">
-      {/* Feature 1 */}
+      {/* Feature 1 — Kive-style split layout */}
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-5xl font-medium text-center text-foreground mb-4">
           Превращайте идеи в визуалы
@@ -13,11 +18,67 @@ const FeaturesSection = () => {
         <p className="text-center text-muted-foreground mb-12 max-w-md mx-auto">
           Инструмент для креативных задач любой нагрузки.
         </p>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-          <img src={productPerfume} alt="Продуктовое фото" className="rounded-xl w-full aspect-square object-cover" loading="lazy" />
-          <img src={featureBag} alt="Фото сумки" className="rounded-xl w-full aspect-square object-cover" loading="lazy" />
-          <img src={featurePerfumeAloe} alt="Парфюм с алоэ" className="rounded-xl w-full aspect-square object-cover" loading="lazy" />
-          <img src={productPerfume} alt="Вариант продукта" className="rounded-xl w-full aspect-square object-cover" loading="lazy" />
+
+        <div className="grid md:grid-cols-[1fr_0.8fr] gap-0 rounded-2xl overflow-hidden bg-secondary/30 border border-border/50">
+          {/* Left — Hero result image */}
+          <div className="relative aspect-[3/4] md:aspect-auto">
+            <img
+              src={featureGirlJacket}
+              alt="Результат генерации"
+              loading="lazy"
+              className="w-full h-full object-cover"
+            />
+          </div>
+
+          {/* Right — Chat-like interface */}
+          <div className="flex flex-col justify-between p-5 md:p-6 gap-4 bg-secondary/60">
+            {/* Generated variations grid */}
+            <div className="grid grid-cols-2 gap-2 rounded-xl overflow-hidden">
+              <img src={featureVar1} alt="Вариация 1" loading="lazy" className="w-full aspect-square object-cover rounded-lg" />
+              <img src={featureVar2} alt="Вариация 2" loading="lazy" className="w-full aspect-square object-cover rounded-lg" />
+              <img src={featureVar3} alt="Вариация 3" loading="lazy" className="w-full aspect-square object-cover rounded-lg" />
+              <img src={featureVar4} alt="Вариация 4" loading="lazy" className="w-full aspect-square object-cover rounded-lg" />
+            </div>
+
+            {/* Chat prompt bubble */}
+            <div className="space-y-3">
+              <div className="flex items-start gap-3">
+                <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center shrink-0">
+                  <span className="text-xs font-bold text-primary">AI</span>
+                </div>
+                <div className="flex-1">
+                  <div className="inline-flex items-center gap-1.5 bg-accent text-accent-foreground text-xs font-medium px-2.5 py-1 rounded-full mb-1.5">
+                    <span>⚡</span>
+                    <span>АВТО</span>
+                  </div>
+                  <p className="text-sm text-foreground">
+                    22-летняя девушка в @Shearling Jacket Black
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-3">
+                <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center shrink-0">
+                  <span className="text-xs font-bold text-primary">AI</span>
+                </div>
+                <div className="flex-1">
+                  <div className="inline-flex items-center gap-1.5 bg-accent text-accent-foreground text-xs font-medium px-2.5 py-1 rounded-full mb-1.5">
+                    <span>🎨</span>
+                    <span>Портрет</span>
+                  </div>
+                  <p className="text-sm text-foreground">
+                    24-летняя девушка в @Athletic mesh tank
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Input bar */}
+            <div className="flex items-center gap-2 bg-background/80 backdrop-blur-sm rounded-xl px-4 py-3 border border-border/50">
+              <span className="text-muted-foreground text-sm">↑</span>
+              <span className="text-sm text-muted-foreground">Попробуйте с вашим продуктом</span>
+            </div>
+          </div>
         </div>
       </div>
 
