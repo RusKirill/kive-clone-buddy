@@ -49,20 +49,6 @@ const FeaturesSection = () => {
                 </div>
               </div>
 
-              <div className="flex items-start gap-3">
-                <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center shrink-0">
-                  <span className="text-xs font-bold text-primary">AI</span>
-                </div>
-                <div className="flex-1">
-                  <div className="inline-flex items-center gap-1.5 bg-accent text-accent-foreground text-xs font-medium px-2.5 py-1 rounded-full mb-1.5">
-                    <span>🎨</span>
-                    <span>Портрет</span>
-                  </div>
-                  <p className="text-sm text-foreground">
-                    24-летняя девушка в @Athletic mesh tank
-                  </p>
-                </div>
-              </div>
             </div>
 
             {/* Input bar */}
