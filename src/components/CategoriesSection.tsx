@@ -6,7 +6,7 @@ import categoryFurniture from "@/assets/category-furniture.jpg";
 const categories = [
   { name: "Мода и одежда", image: categoryFashion },
   { name: "Уход за кожей", image: categorySkincare },
-  { name: "Гигиена", image: categoryHygiene },
+  { name: "Сумки", image: categoryHygiene },
   { name: "Мебель и интерьер", image: categoryFurniture },
 ];
 
