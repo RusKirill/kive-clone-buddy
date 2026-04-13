@@ -73,7 +73,6 @@ const FeaturesSection = () => {
           </div>
         </div>
       </div>
-      </div>
 
       {/* Feature 2 */}
       <div className="max-w-5xl mx-auto">
