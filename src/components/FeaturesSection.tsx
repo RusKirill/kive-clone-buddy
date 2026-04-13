@@ -44,7 +44,7 @@ const FeaturesSection = () => {
                     <span>АВТО</span>
                   </div>
                   <p className="text-sm text-foreground">
-                    22-летняя девушка в черной кожаной куртке
+                    Создай фото используя куртку из первого изображения и позу со второго изображения
                   </p>
                 </div>
               </div>
