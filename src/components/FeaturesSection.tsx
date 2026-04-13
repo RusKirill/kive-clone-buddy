@@ -44,7 +44,7 @@ const FeaturesSection = () => {
                     <span>АВТО</span>
                   </div>
                   <p className="text-sm text-foreground">
-                    22-летняя девушка в @Shearling Jacket Black
+                    22-летняя девушка в черной кожаной куртке
                   </p>
                 </div>
               </div>
