@@ -1,46 +1,87 @@
-import { useState, useEffect } from "react";
-import categoryFashion from "@/assets/category-fashion.jpg";
-import categorySkincare from "@/assets/category-skincare.jpg";
-import categoryHygiene from "@/assets/category-hygiene.jpg";
-import categoryFurniture from "@/assets/category-furniture.jpg";
+import { useState, useEffect, useCallback } from "react";
+import catClothing from "@/assets/cat-clothing.jpg";
+import catHauteCouture from "@/assets/cat-haute-couture.jpg";
+import catSport from "@/assets/cat-sport.jpg";
+import catSkincare from "@/assets/cat-skincare.jpg";
+import catPerfume from "@/assets/cat-perfume.jpg";
+import catMakeup from "@/assets/cat-makeup.jpg";
+import catBags from "@/assets/cat-bags.jpg";
+import catDrinks from "@/assets/cat-drinks.jpg";
+import catHygiene from "@/assets/cat-hygiene.jpg";
+import catFurniture from "@/assets/cat-furniture.jpg";
+import catLighting from "@/assets/cat-lighting.jpg";
+import catLifestyle from "@/assets/cat-lifestyle.jpg";
+
+const DURATION = 4000;
 
 const cardSets = [
   [
-    { name: "Одежда", image: categoryFashion },
-    { name: "Высокая мода", image: categoryFashion },
-    { name: "Спорт", image: categoryFashion },
+    { name: "Одежда", image: catClothing },
+    { name: "Высокая мода", image: catHauteCouture },
+    { name: "Спорт", image: catSport },
   ],
   [
-    { name: "Уход за кожей", image: categorySkincare },
-    { name: "Парфюм", image: categorySkincare },
-    { name: "Макияж", image: categorySkincare },
+    { name: "Уход за кожей", image: catSkincare },
+    { name: "Парфюм", image: catPerfume },
+    { name: "Макияж", image: catMakeup },
   ],
   [
-    { name: "Сумки", image: categoryHygiene },
-    { name: "Напитки", image: categoryHygiene },
-    { name: "Гигиена", image: categoryHygiene },
+    { name: "Сумки", image: catBags },
+    { name: "Напитки", image: catDrinks },
+    { name: "Гигиена", image: catHygiene },
   ],
   [
-    { name: "Мебель", image: categoryFurniture },
-    { name: "Свет и декор", image: categoryFurniture },
-    { name: "Образ жизни", image: categoryFurniture },
+    { name: "Мебель", image: catFurniture },
+    { name: "Свет и декор", image: catLighting },
+    { name: "Образ жизни", image: catLifestyle },
   ],
 ];
 
 const CategoriesSection = () => {
   const [indices, setIndices] = useState([0, 0, 0, 0]);
+  const [progress, setProgress] = useState([0, 0, 0, 0]);
+
+  const advanceCard = useCallback((cardIndex: number) => {
+    setIndices((prev) => {
+      const next = [...prev];
+      next[cardIndex] = (next[cardIndex] + 1) % cardSets[cardIndex].length;
+      return next;
+    });
+    setProgress((prev) => {
+      const next = [...prev];
+      next[cardIndex] = 0;
+      return next;
+    });
+  }, []);
 
   useEffect(() => {
-    const timers = cardSets.map((set, cardIndex) =>
-      setInterval(() => {
-        setIndices((prev) => {
+    const interval = setInterval(() => {
+      setProgress((prev) =>
+        prev.map((p, i) => {
+          const next = p + 50 / DURATION * 100;
+          if (next >= 100) {
+            setTimeout(() => advanceCard(i), 0);
+            return 100;
+          }
+          return next;
+        })
+      );
+    }, 50);
+    return () => clearInterval(interval);
+  }, [advanceCard]);
+
+  // Stagger the start of each card
+  useEffect(() => {
+    const staggerTimers = cardSets.map((_, i) =>
+      setTimeout(() => {
+        setProgress((prev) => {
           const next = [...prev];
-          next[cardIndex] = (next[cardIndex] + 1) % set.length;
+          next[i] = 0.01;
           return next;
         });
-      }, 3000 + cardIndex * 800)
+      }, i * 600)
     );
-    return () => timers.forEach(clearInterval);
+    return () => staggerTimers.forEach(clearTimeout);
   }, []);
 
   return (
@@ -56,14 +97,28 @@ const CategoriesSection = () => {
               key={cardIndex}
               className="relative group overflow-hidden rounded-xl aspect-[3/4] cursor-pointer"
             >
-              <img
-                key={cat.name}
-                src={cat.image}
-                alt={cat.name}
-                loading="lazy"
-                className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 animate-fade-in"
-              />
-              <span className="absolute top-4 left-4 text-sm font-medium text-foreground">
+              {/* Progress bar */}
+              <div className="absolute top-0 left-0 right-0 z-20 h-[3px] bg-foreground/20 rounded-t-xl overflow-hidden">
+                <div
+                  className="h-full bg-foreground/80 transition-none"
+                  style={{ width: `${progress[cardIndex]}%` }}
+                />
+              </div>
+
+              {/* Images with crossfade */}
+              {set.map((item, itemIndex) => (
+                <img
+                  key={itemIndex}
+                  src={item.image}
+                  alt={item.name}
+                  loading="lazy"
+                  className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${
+                    itemIndex === indices[cardIndex] ? "opacity-100" : "opacity-0"
+                  }`}
+                />
+              ))}
+
+              <span className="absolute top-4 left-4 z-10 text-sm font-medium text-foreground">
                 {cat.name}
               </span>
             </div>
