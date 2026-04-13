@@ -31,15 +31,7 @@ const FeaturesSection = () => {
           </div>
 
           {/* Right — Chat-like interface */}
-          <div className="flex flex-col justify-between p-5 md:p-6 gap-4 bg-secondary/60">
-            {/* Generated variations grid */}
-            <div className="grid grid-cols-2 gap-2 rounded-xl overflow-hidden">
-              <img src={featureVar1} alt="Вариация 1" loading="lazy" className="w-full aspect-square object-cover rounded-lg" />
-              <img src={featureVar2} alt="Вариация 2" loading="lazy" className="w-full aspect-square object-cover rounded-lg" />
-              <img src={featureVar3} alt="Вариация 3" loading="lazy" className="w-full aspect-square object-cover rounded-lg" />
-              <img src={featureVar4} alt="Вариация 4" loading="lazy" className="w-full aspect-square object-cover rounded-lg" />
-            </div>
-
+          <div className="flex flex-col justify-center p-5 md:p-6 gap-4 bg-secondary/60">
             {/* Chat prompt bubble */}
             <div className="space-y-3">
               <div className="flex items-start gap-3">
@@ -80,6 +72,7 @@ const FeaturesSection = () => {
             </div>
           </div>
         </div>
+      </div>
       </div>
 
       {/* Feature 2 */}
