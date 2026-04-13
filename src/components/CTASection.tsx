@@ -4,17 +4,17 @@ const CTASection = () => {
   return (
     <section className="px-4 py-32 text-center">
       <h2 className="text-3xl md:text-5xl font-medium text-foreground mb-6">
-        Ready to <em className="not-italic text-primary">transform</em> your product content?
+        Готовы <em className="not-italic text-primary">преобразить</em> контент вашего бренда?
       </h2>
       <p className="text-muted-foreground mb-10 text-lg">
-        Start creating stunning product shots today. From $20/mo.
+        Начните создавать потрясающие продуктовые фото уже сегодня. От 1 500 ₽/мес.
       </p>
       <div className="flex items-center justify-center gap-4">
         <Button variant="outline" size="lg" className="rounded-full px-8">
-          View pricing
+          Тарифы
         </Button>
         <Button size="lg" className="rounded-full px-8">
-          Sign up
+          Попробовать бесплатно
         </Button>
       </div>
     </section>
