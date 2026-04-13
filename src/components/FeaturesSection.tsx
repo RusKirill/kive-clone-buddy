@@ -8,7 +8,7 @@ const FeaturesSection = () => {
       {/* Feature 1 */}
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-5xl font-medium text-center text-foreground mb-4">
-          От идеи до готового визуала
+          Превращайте идеи в визуалы
         </h2>
         <p className="text-center text-muted-foreground mb-12 max-w-md mx-auto">
           ИИ, который помогает небольшим командам справляться с большим объёмом креатива.
