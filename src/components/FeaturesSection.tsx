@@ -11,7 +11,7 @@ const FeaturesSection = () => {
           Превращайте идеи в визуалы
         </h2>
         <p className="text-center text-muted-foreground mb-12 max-w-md mx-auto">
-          ИИ, который помогает небольшим командам справляться с большим объёмом креатива.
+          Инструмент для креативных задач любой нагрузки.
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
           <img src={productPerfume} alt="Продуктовое фото" className="rounded-xl w-full aspect-square object-cover" loading="lazy" />
