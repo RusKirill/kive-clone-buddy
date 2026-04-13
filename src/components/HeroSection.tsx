@@ -16,7 +16,8 @@ const HeroSection = () => {
       }}
     >
       {/* Dark overlay for readability */}
-      <div className="absolute inset-0 bg-background/60" />
+      {/* Gradient only on the left for text readability */}
+      <div className="absolute inset-0 bg-gradient-to-r from-background via-background/40 to-transparent" />
 
       <div className="relative z-10 flex flex-col items-start max-w-7xl mx-auto w-full">
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-medium text-foreground leading-[1.05] max-w-2xl text-left">
