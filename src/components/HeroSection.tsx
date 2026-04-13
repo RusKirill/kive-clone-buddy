@@ -7,7 +7,7 @@ const HeroSection = () => {
   return (
     <section className="flex flex-col items-center justify-center min-h-screen px-4 pt-20">
       <h1 className="text-5xl md:text-7xl lg:text-8xl font-medium text-center text-foreground leading-[1.05] max-w-4xl">
-        Визуал для бренда от ИИ
+        ИИ-визуалы для вашего бренда
       </h1>
       <p className="mt-6 text-lg text-muted-foreground text-center max-w-lg">
         Создавайте стильные продуктовые фото и визуалы за секунды.
