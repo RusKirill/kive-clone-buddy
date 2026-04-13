@@ -10,8 +10,9 @@ const HeroSection = () => {
       className="relative flex items-center min-h-screen px-4 pt-20 overflow-hidden"
       style={{
         backgroundImage: `url(${heroBg})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center right",
+        backgroundSize: "contain",
+        backgroundPosition: "right center",
+        backgroundRepeat: "no-repeat",
       }}
     >
       {/* Dark overlay for readability */}
