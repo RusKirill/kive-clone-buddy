@@ -8,11 +8,11 @@ const Footer = () => {
         <span className="text-sm font-medium text-foreground">Kive</span>
       </div>
       <div className="flex items-center gap-6">
-        <a href="#" className="text-xs text-muted-foreground hover:text-foreground transition-colors">Terms</a>
-        <a href="#" className="text-xs text-muted-foreground hover:text-foreground transition-colors">Privacy</a>
-        <a href="#" className="text-xs text-muted-foreground hover:text-foreground transition-colors">Contact</a>
+        <a href="#" className="text-xs text-muted-foreground hover:text-foreground transition-colors">Условия</a>
+        <a href="#" className="text-xs text-muted-foreground hover:text-foreground transition-colors">Конфиденциальность</a>
+        <a href="#" className="text-xs text-muted-foreground hover:text-foreground transition-colors">Контакты</a>
       </div>
-      <a href="#" className="text-xs text-primary hover:underline">Get started</a>
+      <a href="#" className="text-xs text-primary hover:underline">Начать</a>
     </footer>
   );
 };

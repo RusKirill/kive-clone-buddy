@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 
 const Navbar = () => {
-  const navItems = ["Features", "Discover", "Pricing", "Customers", "Enterprise"];
+  const navItems = ["Возможности", "Галерея", "Цены", "Клиенты", "Для бизнеса"];
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 bg-background/80 backdrop-blur-md border-b border-border/50">
@@ -22,10 +22,10 @@ const Navbar = () => {
 
       <div className="flex items-center gap-3">
         <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors hidden sm:block">
-          Log in
+          Войти
         </a>
         <Button variant="outline" size="sm" className="rounded-full text-sm">
-          Get started
+          Начать
         </Button>
       </div>
     </nav>

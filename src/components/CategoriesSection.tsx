@@ -4,17 +4,17 @@ import categoryHygiene from "@/assets/category-hygiene.jpg";
 import categoryFurniture from "@/assets/category-furniture.jpg";
 
 const categories = [
-  { name: "Fashion & Apparel", image: categoryFashion },
-  { name: "Skincare", image: categorySkincare },
-  { name: "Personal Hygiene", image: categoryHygiene },
-  { name: "Furniture", image: categoryFurniture },
+  { name: "Мода и одежда", image: categoryFashion },
+  { name: "Уход за кожей", image: categorySkincare },
+  { name: "Гигиена", image: categoryHygiene },
+  { name: "Мебель и интерьер", image: categoryFurniture },
 ];
 
 const CategoriesSection = () => {
   return (
     <section className="px-4 py-24">
       <h2 className="text-3xl md:text-5xl font-medium text-center text-foreground mb-12">
-        All products look better here
+        Любой товар выглядит лучше здесь
       </h2>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-6xl mx-auto">
         {categories.map((cat) => (
