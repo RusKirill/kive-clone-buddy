@@ -56,7 +56,7 @@ const FeaturesSection = () => {
             {/* Input bar */}
             <div className="flex items-center gap-2 bg-background/80 backdrop-blur-sm rounded-xl px-4 py-3 border border-border/50">
               <span className="text-muted-foreground text-sm">↑</span>
-              <span className="text-sm text-muted-foreground">Попробуйте с вашим продуктом</span>
+              <span className="text-sm text-muted-foreground">Создать</span>
             </div>
           </div>
         </div>
