@@ -46,7 +46,7 @@ const FeaturesSection = () => {
                     <img src={chatAttach2} alt="Прикреплённое фото 2" className="w-20 h-20 rounded-lg object-cover border border-border/50" />
                   </div>
                   <p className="text-sm text-foreground">
-                    Создай фото где девушка модельной внешности с темными волосами одета в белое пушистое пальто
+                    Девушка модельной внешности с темными волосами одета в белое пушистое пальто на фоне моря ночью
                   </p>
                 </div>
               </div>
