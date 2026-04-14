@@ -80,9 +80,9 @@ const FeaturesSection = () => {
           </div>
           <div className="relative rounded-xl overflow-hidden aspect-[4/5]">
             <img src={featureBag} alt="Генерация сумки" className="w-full h-full object-cover" loading="lazy" />
-            <div className="absolute bottom-4 left-4 right-4 bg-secondary/80 backdrop-blur-sm rounded-lg p-3">
-              <p className="text-xs text-muted-foreground">@Кожаная сумка Boxy</p>
-              <p className="text-xs text-foreground">в руках девушки в ботаническом саду, фото в полный рост</p>
+            <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/70 to-transparent" />
+            <div className="absolute bottom-4 left-4 right-4">
+              <p className="text-xs"><span className="font-bold text-white">@Кожаная сумка Boxy</span> <span className="text-white/70">в руках девушки в ботаническом саду, фото в полный рост</span></p>
             </div>
           </div>
         </div>
