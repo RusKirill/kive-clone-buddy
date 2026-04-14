@@ -65,7 +65,7 @@ const FeaturesSection = () => {
       {/* Feature 2 */}
       <div className="max-w-5xl mx-auto">
         <h2 className="text-3xl md:text-5xl font-medium text-center text-foreground mb-4">
-          Потрясающая точность генерации
+          Невероятно точная генерация
         </h2>
         <p className="text-center text-muted-foreground mb-12 max-w-lg mx-auto">
           ИИ точно воспроизводит ваш продукт и следует инструкциям с невероятной детализацией
