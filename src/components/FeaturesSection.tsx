@@ -75,7 +75,7 @@ const FeaturesSection = () => {
             <img src={featurePerfumeAloe} alt="Точная генерация" className="w-full h-full object-cover" loading="lazy" />
             <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/70 to-transparent" />
             <div className="absolute bottom-4 left-4 right-4">
-              <p className="text-xs"><span className="font-bold text-white">@Pure Aura парфюм 50 мл</span> <span className="text-white/70">свежие листья агавы, натуральные ингредиенты, атмосфера спа</span></p>
+              <p className="text-xs"><span className="font-bold text-white">@Парфюм 50 мл</span> <span className="text-white/70">листья агавы, натуральные ингредиенты, атмосфера спа</span></p>
             </div>
           </div>
           <div className="relative rounded-xl overflow-hidden aspect-[4/5]">
