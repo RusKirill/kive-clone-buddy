@@ -35,8 +35,8 @@ const FeaturesSection = () => {
             {/* Chat prompt bubble */}
             <div className="space-y-3">
               <div className="flex items-start gap-3">
-                <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center shrink-0">
-                  <span className="text-sm font-bold text-primary">C</span>
+                <div className="w-8 h-8 rounded-full bg-foreground flex items-center justify-center shrink-0">
+                  <span className="text-sm font-bold text-background">C</span>
                 </div>
                 <div className="flex-1">
                   <p className="text-sm text-foreground">
