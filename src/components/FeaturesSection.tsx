@@ -82,7 +82,7 @@ const FeaturesSection = () => {
             <img src={featureBag} alt="Генерация сумки" className="w-full h-full object-cover" loading="lazy" />
             <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/70 to-transparent" />
             <div className="absolute bottom-4 left-4 right-4">
-              <p className="text-xs"><span className="font-bold text-white">@Кожаная сумка Boxy</span> <span className="text-white/70">в руках девушки в ботаническом саду, фото в полный рост</span></p>
+              <p className="text-xs"><span className="font-bold text-white">@Серебряная сумка</span> <span className="text-white/70">на синем фоне, в руках модели в красном пальто</span></p>
             </div>
           </div>
         </div>
