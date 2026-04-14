@@ -15,7 +15,7 @@ export default {
     extend: {
       fontFamily: {
         sans: ["Inter", "system-ui", "sans-serif"],
-        calligraphy: ["Dancing Script", "cursive"],
+        calligraphy: ["Great Vibes", "cursive"],
       },
       colors: {
         border: "hsl(var(--border))",
