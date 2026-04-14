@@ -4,7 +4,7 @@ const CTASection = () => {
   return (
     <section className="px-4 py-32 text-center">
       <h2 className="text-3xl md:text-5xl font-medium text-foreground mb-6">
-        Готовы <em className="not-italic font-calligraphy text-primary text-[1.15em]">преобразить</em> контент вашего бренда?
+        Готовы <em className="not-italic font-calligraphy text-primary text-[1.35em]">преобразить</em> контент вашего бренда?
       </h2>
       <p className="text-muted-foreground mb-10 text-lg">
         Начните создавать потрясающие продуктовые фото уже сегодня. От 1 500 ₽/мес.
