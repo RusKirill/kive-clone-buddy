@@ -73,7 +73,7 @@ const FeaturesSection = () => {
         <div className="grid md:grid-cols-2 gap-6">
           <div className="relative rounded-xl overflow-hidden aspect-[4/5]">
             <img src={featurePerfumeAloe} alt="Точная генерация" className="w-full h-full object-cover" loading="lazy" />
-            <div className="absolute bottom-4 left-4 right-4 bg-secondary/80 backdrop-blur-sm rounded-lg p-3">
+            <div className="absolute bottom-4 left-4 right-4">
               <p className="text-xs"><span className="font-bold text-foreground">@Pure Aura scent 50 ml</span> <span className="text-muted-foreground">fresh agave leaves, natural ingredients, spa atmosphere</span></p>
             </div>
           </div>
