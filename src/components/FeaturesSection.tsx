@@ -1,6 +1,7 @@
 import { ArrowUp } from "lucide-react";
 import productPerfume from "@/assets/product-perfume.jpg";
 import featureBag from "@/assets/feature-bag.jpg";
+import featureClothing from "@/assets/feature-clothing.png";
 import featurePerfumeAloe from "@/assets/feature-perfume-aloe.jpg";
 import featureGirlJacket from "@/assets/feature-girl-jacket.jpg";
 import featureVar1 from "@/assets/feature-variation-1.jpg";
@@ -98,7 +99,7 @@ const FeaturesSection = () => {
         </p>
         <div className="grid grid-cols-3 gap-3">
           <img src={productPerfume} alt="Рабочий процесс 1" className="rounded-xl w-full aspect-[3/4] object-cover" loading="lazy" />
-          <img src={featureBag} alt="Рабочий процесс 2" className="rounded-xl w-full aspect-[3/4] object-cover" loading="lazy" />
+          <img src={featureClothing} alt="Рабочий процесс 2" className="rounded-xl w-full aspect-[3/4] object-cover" loading="lazy" />
           <img src={featurePerfumeAloe} alt="Рабочий процесс 3" className="rounded-xl w-full aspect-[3/4] object-cover" loading="lazy" />
         </div>
       </div>
