@@ -1,6 +1,7 @@
 import { ArrowUp } from "lucide-react";
 import productPerfume from "@/assets/product-perfume.jpg";
 import featureBag from "@/assets/feature-bag.jpg";
+import featureClothing from "@/assets/feature-clothing.png";
 import featurePerfumeAloe from "@/assets/feature-perfume-aloe.jpg";
 import featureGirlJacket from "@/assets/feature-girl-jacket.jpg";
 import featureVar1 from "@/assets/feature-variation-1.jpg";
