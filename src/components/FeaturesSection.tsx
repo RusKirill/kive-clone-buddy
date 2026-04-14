@@ -1,3 +1,4 @@
+import { ArrowUp } from "lucide-react";
 import productPerfume from "@/assets/product-perfume.jpg";
 import featureBag from "@/assets/feature-bag.jpg";
 import featurePerfumeAloe from "@/assets/feature-perfume-aloe.jpg";
@@ -52,7 +53,10 @@ const FeaturesSection = () => {
 
             {/* Input bar */}
             <div className="flex items-center gap-2 bg-background/80 backdrop-blur-sm rounded-xl px-4 py-3 border border-border/50">
-              <span className="text-sm text-muted-foreground">Создать</span>
+              <span className="text-sm text-muted-foreground flex-1">Создать</span>
+              <div className="w-7 h-7 rounded-lg bg-foreground flex items-center justify-center">
+                <ArrowUp className="w-4 h-4 text-background" />
+              </div>
             </div>
           </div>
         </div>
