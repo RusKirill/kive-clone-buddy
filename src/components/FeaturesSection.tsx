@@ -68,7 +68,7 @@ const FeaturesSection = () => {
           Невероятно точная генерация
         </h2>
         <p className="text-center text-muted-foreground mb-12 max-w-lg mx-auto">
-          ИИ точно воспроизводит ваш продукт и следует инструкциям с невероятной детализацией
+          ИИ с исключительной точностью интеграции и исполнения задач
         </p>
         <div className="grid md:grid-cols-2 gap-6">
           <div className="relative rounded-xl overflow-hidden aspect-[4/5]">
