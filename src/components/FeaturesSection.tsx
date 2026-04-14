@@ -36,26 +36,20 @@ const FeaturesSection = () => {
           <div className="flex flex-col justify-center p-5 md:p-6 gap-4 bg-secondary/60">
             {/* Chat prompt bubble */}
             <div className="space-y-3">
-              <div className="flex items-start gap-3">
-                <div className="w-8 h-8 rounded-full bg-foreground flex items-center justify-center shrink-0">
-                  <span className="text-sm font-bold text-background">C</span>
-                </div>
-                <div className="flex-1">
-                  <div className="flex gap-2 mb-2">
-                    <img src={chatAttach1} alt="Прикреплённое фото 1" className="w-20 h-20 rounded-lg object-cover border border-border/50" />
-                    <img src={chatAttach2} alt="Прикреплённое фото 2" className="w-20 h-20 rounded-lg object-cover border border-border/50" />
-                  </div>
-                  <p className="text-sm text-foreground">
-                    Девушка модельной внешности с темными волосами одета в белое пушистое пальто на фоне моря ночью
-                  </p>
-                </div>
+              <div className="flex gap-2 mb-2">
+                <img src={chatAttach1} alt="Прикреплённое фото 1" className="w-20 h-20 rounded-lg object-cover border border-border/50" />
+                <img src={chatAttach2} alt="Прикреплённое фото 2" className="w-20 h-20 rounded-lg object-cover border border-border/50" />
               </div>
-
+              <p className="text-sm text-foreground">
+                Девушка модельной внешности с темными волосами одета в белое пушистое пальто на фоне моря ночью
+              </p>
             </div>
 
             {/* Input bar */}
             <div className="flex items-center gap-2 bg-background/80 backdrop-blur-sm rounded-xl px-4 py-3 border border-border/50">
-              <span className="text-muted-foreground text-sm">↑</span>
+              <div className="w-8 h-8 rounded-full bg-foreground flex items-center justify-center shrink-0">
+                <span className="text-sm font-bold text-background">C</span>
+              </div>
               <span className="text-sm text-muted-foreground">Создать</span>
             </div>
           </div>
