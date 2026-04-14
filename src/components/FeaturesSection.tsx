@@ -99,7 +99,7 @@ const FeaturesSection = () => {
         </p>
         <div className="grid grid-cols-3 gap-3">
           <img src={productPerfume} alt="Рабочий процесс 1" className="rounded-xl w-full aspect-[3/4] object-cover" loading="lazy" />
-          <img src={featureBag} alt="Рабочий процесс 2" className="rounded-xl w-full aspect-[3/4] object-cover" loading="lazy" />
+          <img src={featureClothing} alt="Рабочий процесс 2" className="rounded-xl w-full aspect-[3/4] object-cover" loading="lazy" />
           <img src={featurePerfumeAloe} alt="Рабочий процесс 3" className="rounded-xl w-full aspect-[3/4] object-cover" loading="lazy" />
         </div>
       </div>
