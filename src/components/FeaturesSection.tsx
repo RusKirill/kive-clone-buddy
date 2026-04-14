@@ -41,13 +41,13 @@ const FeaturesSection = () => {
                   <span className="text-sm font-bold text-background">C</span>
                 </div>
                 <div className="flex-1">
+                  <div className="flex gap-2 mb-2">
+                    <img src={chatAttach1} alt="Прикреплённое фото 1" className="w-20 h-20 rounded-lg object-cover border border-border/50" />
+                    <img src={chatAttach2} alt="Прикреплённое фото 2" className="w-20 h-20 rounded-lg object-cover border border-border/50" />
+                  </div>
                   <p className="text-sm text-foreground">
                     Создай фото используя куртку из первого изображения и позу со второго изображения
-                   </p>
-                  <div className="flex gap-2 mt-2">
-                    <img src={chatAttach1} alt="Прикреплённое фото 1" className="w-14 h-14 rounded-lg object-cover border border-border/50" />
-                    <img src={chatAttach2} alt="Прикреплённое фото 2" className="w-14 h-14 rounded-lg object-cover border border-border/50" />
-                  </div>
+                  </p>
                 </div>
               </div>
 
