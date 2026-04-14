@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 import catClothing from "@/assets/cat-clothing.png";
 import catHauteCouture from "@/assets/cat-haute-couture.jpg";
-import catSport from "@/assets/cat-sport.jpg";
+import catSport from "@/assets/cat-sport.png";
 import catSkincare from "@/assets/cat-skincare.jpg";
 import catPerfume from "@/assets/cat-perfume.jpg";
 import catMakeup from "@/assets/cat-makeup.jpg";
