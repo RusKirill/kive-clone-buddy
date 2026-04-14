@@ -6,6 +6,8 @@ import featureVar1 from "@/assets/feature-variation-1.jpg";
 import featureVar2 from "@/assets/feature-variation-2.jpg";
 import featureVar3 from "@/assets/feature-variation-3.jpg";
 import featureVar4 from "@/assets/feature-variation-4.jpg";
+import chatAttach1 from "@/assets/chat-attach-1.jpg";
+import chatAttach2 from "@/assets/chat-attach-2.jpg";
 
 const FeaturesSection = () => {
   return (
@@ -41,7 +43,11 @@ const FeaturesSection = () => {
                 <div className="flex-1">
                   <p className="text-sm text-foreground">
                     Создай фото используя куртку из первого изображения и позу со второго изображения
-                  </p>
+                   </p>
+                  <div className="flex gap-2 mt-2">
+                    <img src={chatAttach1} alt="Прикреплённое фото 1" className="w-14 h-14 rounded-lg object-cover border border-border/50" />
+                    <img src={chatAttach2} alt="Прикреплённое фото 2" className="w-14 h-14 rounded-lg object-cover border border-border/50" />
+                  </div>
                 </div>
               </div>
 
