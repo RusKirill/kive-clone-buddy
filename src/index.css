@@ -66,3 +66,15 @@
     @apply bg-clip-text text-transparent bg-gradient-to-r from-foreground to-muted-foreground;
   }
 }
+
+.hero-bg {
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-width: 768px) {
+  .hero-bg {
+    background-size: contain;
+    background-position: right center;
+  }
+}
