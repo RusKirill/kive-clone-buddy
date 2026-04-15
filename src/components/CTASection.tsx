@@ -7,7 +7,7 @@ const CTASection = () => {
         Готовы <em className="not-italic font-calligraphy text-primary text-[1.35em]">преобразить</em> контент вашего бренда?
       </h2>
       <p className="text-muted-foreground mb-10 text-lg">
-        Начните создавать потрясающие продуктовые фото уже сегодня.
+        Начните создавать потрясающие визуалы уже сегодня.
       </p>
       <div className="flex items-center justify-center gap-4">
         <Button variant="outline" size="lg" className="rounded-full px-8">
