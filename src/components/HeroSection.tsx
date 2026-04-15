@@ -3,11 +3,9 @@ import heroBg from "@/assets/hero-bg.png";
 const HeroSection = () => {
   return (
     <section
-      className="relative flex items-center min-h-[60vh] md:min-h-screen px-4 pt-20 overflow-hidden"
+      className="relative flex items-center min-h-[70vh] md:min-h-screen px-4 pt-20 overflow-hidden hero-bg"
       style={{
         backgroundImage: `url(${heroBg})`,
-        backgroundSize: "contain",
-        backgroundPosition: "right center",
         backgroundRepeat: "no-repeat",
       }}
     >
