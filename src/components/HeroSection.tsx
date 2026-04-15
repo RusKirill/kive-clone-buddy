@@ -16,7 +16,7 @@ const HeroSection = () => {
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-medium text-foreground leading-[1.05] max-w-2xl text-left">
           ИИ-визуалы для вашего бренда
         </h1>
-        <p className="mt-6 text-lg text-muted-foreground max-w-lg text-left">
+        <p className="mt-6 text-lg text-muted-foreground max-w-none whitespace-nowrap text-left">
           Создавайте стильные продуктовые фото и визуалы за секунды.
         </p>
       </div>
