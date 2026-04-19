@@ -69,7 +69,7 @@ const Pricing = () => {
             </h1>
             <p className="mt-6 text-lg md:text-xl text-muted-foreground">
               Тарифы на любой вкус — попробуйте{" "}
-              <em className="not-italic font-calligraphy text-primary text-[1.6em] align-middle">
+              <em className="not-italic font-calligraphy text-primary text-[2em] align-middle">
                 бесплатно
               </em>
               !
