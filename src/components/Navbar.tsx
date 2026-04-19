@@ -8,26 +8,10 @@ const Navbar = () => {
       <Link to="/" className="flex items-center gap-2">
         <img src={logo} alt="Closeit" className="h-9" />
       </Link>
-
-      <div className="flex items-center gap-6">
-        <Link
-          to="/pricing"
-          className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-        >
-          Цены
-        </Link>
         <a
           href="#"
           className="text-sm text-muted-foreground hover:text-foreground transition-colors hidden sm:block"
         >
           Войти
         </a>
-        <Button variant="outline" size="sm" className="rounded-full text-sm">
-          Начать
-        </Button>
-      </div>
-    </nav>
-  );
-};
-
 export default Navbar;
