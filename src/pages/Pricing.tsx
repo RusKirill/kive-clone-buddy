@@ -140,7 +140,7 @@ const Pricing = () => {
               Напишите нам на почту — поможем подобрать тариф под ваш бренд.
             </p>
             <Button size="lg" asChild className="mt-8 rounded-full px-8">
-              <a href="mailto:contact.wearika@mail.ru">contact.wearika@mail.ru</a>
+              <a href="mailto:contact.wearika@mail.ru">Связаться с нами</a>
             </Button>
           </div>
         </div>
