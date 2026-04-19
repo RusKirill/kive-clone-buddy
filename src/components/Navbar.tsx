@@ -10,8 +10,8 @@ const Navbar = () => {
       </Link>
 
       <div className="flex items-center gap-6">
-        <Button variant="outline" size="sm" className="rounded-full text-sm">
-          Начать
+        <Button variant="outline" size="sm" asChild className="rounded-full text-sm">
+          <a href="https://closeit.ru" target="_blank" rel="noopener noreferrer">Начать</a>
         </Button>
       </div>
     </nav>
