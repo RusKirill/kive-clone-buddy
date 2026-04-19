@@ -64,7 +64,7 @@ const Pricing = () => {
         <div className="max-w-6xl mx-auto">
           {/* Header */}
           <div className="text-center">
-            <h1 className="text-6xl md:text-8xl font-medium tracking-tight text-foreground">
+            <h1 className="text-4xl md:text-6xl font-medium tracking-tight text-foreground">
               Цены
             </h1>
             <p className="mt-6 text-lg md:text-xl text-muted-foreground">
