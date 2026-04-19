@@ -68,11 +68,11 @@ const Pricing = () => {
               Цены
             </h1>
             <p className="mt-6 text-lg md:text-xl text-muted-foreground">
-              Платите только за генерации — попробуйте{" "}
+              Тарифы на любой вкус — попробуйте{" "}
               <em className="not-italic font-calligraphy text-primary text-[1.6em] align-middle">
                 бесплатно
               </em>
-              .
+              !
             </p>
           </div>
 
