@@ -10,12 +10,6 @@ const Navbar = () => {
       </Link>
 
       <div className="flex items-center gap-6">
-        <Link
-          to="/pricing"
-          className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-        >
-          Тарифы
-        </Link>
         <Button variant="outline" size="sm" className="rounded-full text-sm">
           Начать
         </Button>
