@@ -14,7 +14,7 @@ const Navbar = () => {
           to="/pricing"
           className="text-sm text-muted-foreground hover:text-foreground transition-colors"
         >
-          Цены
+          Тарифы
         </Link>
         <Button variant="outline" size="sm" className="rounded-full text-sm">
           Начать
