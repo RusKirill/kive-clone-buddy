@@ -1,76 +1,57 @@
-import { useState } from "react";
 import { Check } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
-type Billing = "yearly" | "monthly";
-
 interface Plan {
   name: string;
-  priceMonthly: number | null;
-  priceYearly: number | null;
-  customLabel?: string;
-  intro?: string;
+  generations: string;
+  price: number;
+  perGeneration: string;
   bullets: string[];
   cta: string;
   recommended?: boolean;
-  highlight?: string;
 }
 
 const plans: Plan[] = [
   {
-    name: "Free",
-    priceMonthly: 0,
-    priceYearly: 0,
-    bullets: ["Просмотр вдохновения", "Ограниченная генерация", "5 досок"],
-    cta: "Выбрать план",
-  },
-  {
-    name: "Basic",
-    priceMonthly: 1490,
-    priceYearly: 1190,
-    intro: "Всё из Free, плюс",
-    bullets: [
-      "Генерация ИИ-фото и видео",
-      "Инструменты ИИ-редактирования",
-      "10 000 элементов в библиотеке",
-      "3 пользователя",
-    ],
-    cta: "Выбрать план",
-    highlight: "1 000 кредитов в месяц",
+    name: "Starter",
+    generations: "10 генераций",
+    price: 199,
+    perGeneration: "19.9 ₽ за генерацию",
+    bullets: ["10 генераций", "Все AI-модели", "Выбор поз и фонов", "Скачивание в HD"],
+    cta: "Выбрать",
   },
   {
     name: "Pro",
-    priceMonthly: 6990,
-    priceYearly: 5490,
-    intro: "Всё из Basic, плюс",
+    generations: "50 генераций",
+    price: 799,
+    perGeneration: "16 ₽ за генерацию",
     bullets: [
-      "5x использования",
-      "Обучение стиля бренда",
-      "Безлимит ИИ-продуктов",
-      "50 000 элементов в библиотеке",
-      "10 пользователей",
+      "50 генераций",
+      "Все AI-модели",
+      "Выбор поз и фонов",
+      "Скачивание в HD",
+      "Приоритетная очередь",
     ],
-    cta: "Выбрать план",
+    cta: "Выбрать",
     recommended: true,
-    highlight: "5 000 кредитов в месяц",
   },
   {
-    name: "Enterprise",
-    priceMonthly: null,
-    priceYearly: null,
-    customLabel: "По запросу",
-    intro: "Всё из Pro, плюс",
+    name: "Business",
+    generations: "200 генераций",
+    price: 2499,
+    perGeneration: "12.5 ₽ за генерацию",
     bullets: [
-      "Кастомные лимиты",
-      "Кастомные ИИ-пресеты",
-      "Персональный онбординг",
-      "Выделенная поддержка",
-      "Расширенная безопасность",
+      "200 генераций",
+      "Все AI-модели",
+      "Выбор поз и фонов",
+      "Скачивание в HD",
+      "Приоритетная очередь",
+      "Поддержка 24/7",
     ],
-    cta: "Связаться с нами",
+    cta: "Выбрать",
   },
 ];
 
