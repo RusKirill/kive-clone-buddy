@@ -4,7 +4,6 @@ import logo from "@/assets/logo-closeit.png";
 
 const Navbar = () => {
   const navItems: { label: string; to: string }[] = [
-    { label: "Возможности", to: "/#features" },
     { label: "Цены", to: "/pricing" },
   ];
 
