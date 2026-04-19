@@ -1,6 +1,7 @@
 import { Check } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import ContactDialog from "@/components/ContactDialog";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
@@ -139,9 +140,13 @@ const Pricing = () => {
             <p className="mt-4 text-muted-foreground">
               Напишите нам — поможем подобрать тариф под ваш бренд.
             </p>
-            <Button size="lg" className="mt-8 rounded-full px-8">
-              Связаться с нами
-            </Button>
+            <ContactDialog
+              trigger={
+                <Button size="lg" className="mt-8 rounded-full px-8">
+                  Связаться с нами
+                </Button>
+              }
+            />
           </div>
         </div>
       </main>
