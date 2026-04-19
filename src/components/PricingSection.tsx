@@ -132,22 +132,6 @@ const PricingSection = ({ asPage = false }: PricingSectionProps) => {
           ))}
         </div>
 
-        {/* Footer CTA */}
-        <div className="mt-32 text-center">
-          <h3 className="text-3xl md:text-4xl font-medium text-foreground">
-            Остались{" "}
-            <em className="not-italic font-calligraphy text-primary text-[1.6em] align-middle">
-              вопросы
-            </em>
-            ?
-          </h3>
-          <p className="mt-4 text-muted-foreground">
-            Напишите нам на почту — поможем подобрать тариф под ваш бренд.
-          </p>
-          <Button size="lg" asChild className="mt-8 rounded-full px-8">
-            <a href="mailto:contact.wearika@mail.ru">Связаться с нами</a>
-          </Button>
-        </div>
       </div>
     </section>
   );
