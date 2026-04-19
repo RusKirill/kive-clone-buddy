@@ -1,7 +1,6 @@
 import { Check } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import ContactDialog from "@/components/ContactDialog";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
@@ -138,15 +137,11 @@ const Pricing = () => {
               ?
             </h3>
             <p className="mt-4 text-muted-foreground">
-              Напишите нам — поможем подобрать тариф под ваш бренд.
+              Напишите нам на почту — поможем подобрать тариф под ваш бренд.
             </p>
-            <ContactDialog
-              trigger={
-                <Button size="lg" className="mt-8 rounded-full px-8">
-                  Связаться с нами
-                </Button>
-              }
-            />
+            <Button size="lg" asChild className="mt-8 rounded-full px-8">
+              <a href="mailto:contact.wearika@mail.ru">contact.wearika@mail.ru</a>
+            </Button>
           </div>
         </div>
       </main>
