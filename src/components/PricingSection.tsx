@@ -73,7 +73,7 @@ const PricingSection = ({ asPage = false }: PricingSectionProps) => {
             Тарифы
           </h2>
           <p className="mt-6 text-lg md:text-xl text-muted-foreground">
-            Тарифы на любой вкус — попробуйте{" "}
+            На любой вкус — попробуйте{" "}
             <em className="not-italic font-calligraphy text-primary text-[2em] align-middle">
               бесплатно
             </em>
