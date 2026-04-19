@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import CategoriesSection from "@/components/CategoriesSection";
 import FeaturesSection from "@/components/FeaturesSection";
+import PricingSection from "@/components/PricingSection";
 
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
@@ -13,7 +14,8 @@ const Index = () => {
       <HeroSection />
       <CategoriesSection />
       <FeaturesSection />
-      
+      <PricingSection />
+
       <CTASection />
       <Footer />
     </div>
