@@ -16,12 +16,6 @@ const Navbar = () => {
         >
           Цены
         </Link>
-        <a
-          href="#"
-          className="text-sm text-muted-foreground hover:text-foreground transition-colors hidden sm:block"
-        >
-          Войти
-        </a>
         <Button variant="outline" size="sm" className="rounded-full text-sm">
           Начать
         </Button>
