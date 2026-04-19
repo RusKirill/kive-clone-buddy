@@ -10,8 +10,8 @@ const CTASection = () => {
         Начните создавать потрясающие визуалы уже сегодня.
       </p>
       <div className="flex items-center justify-center gap-4">
-        <Button variant="outline" size="lg" className="rounded-full px-8">
-          Тарифы
+        <Button variant="outline" size="lg" asChild className="rounded-full px-8">
+          <a href="mailto:contact.wearika@mail.ru">Связаться с нами</a>
         </Button>
         <Button size="lg" className="rounded-full px-8">
           Попробовать бесплатно
