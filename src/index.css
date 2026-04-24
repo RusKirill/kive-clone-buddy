@@ -70,7 +70,7 @@
 .hero-bg {
   background-image: var(--hero-bg-mobile);
   background-size: cover;
-  background-position: center;
+  background-position: center top;
   background-repeat: no-repeat;
 }
 
@@ -78,6 +78,6 @@
   .hero-bg {
     background-image: var(--hero-bg-desktop);
     background-size: cover;
-    background-position: right center;
+    background-position: right top;
   }
 }
