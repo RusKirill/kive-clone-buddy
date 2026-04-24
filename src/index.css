@@ -77,7 +77,7 @@
 @media (min-width: 768px) {
   .hero-bg {
     background-image: var(--hero-bg-desktop);
-    background-size: contain;
+    background-size: cover;
     background-position: right center;
   }
 }
